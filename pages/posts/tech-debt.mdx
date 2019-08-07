@@ -1,0 +1,37 @@
+import { withRouter } from "next/router"
+import BlogPost from "../../components/layouts/blog-post"
+
+export const meta = {
+    published: false,
+    publishedAt: "2019-08-02",
+    title: "Tech Debt",
+    summary: "Talking about tech debt",
+    image: "/static/tech-debt-mountain.jpg"
+}
+
+export default withRouter(({ children, router }) => (
+    <BlogPost path={router.pathname} meta={meta}>
+        {children}
+    </BlogPost>
+))
+
+<img src="/static/tech-debt-mountain.jpg" />
+<hr/>
+Ahhh tech debt, every developers old friend. We do not set out to write cumbersome features, so how do so many creep into our codebase?
+Were previous developers maliciously plotting against us?  Is everyone secretly out to get us? How did we even get here?!
+
+### What it is.
+
+I have the honor of working with a profitable legacy codebase at my job.  
+To give some backround: My team (abstractly) adds new users to our application. Sounds like a fairly simple task, yes?  
+Would you be surprised to hear that it takes us, at a minimum, _hundreds of hours_ to accomplish this?
+
+How could it possibly take this long, you may be asking. The answer is **Tech Debt**.
+
+Believe it or not, the process used to take much longer. We are part of a specialized team that only works on this aspect of the application.
+
+### What it isn't
+
+So your application is built on legacy product Z. Z was the new hotness in 2007, but isn't used for new projects.
+
+### How to know when you're producing tech debt

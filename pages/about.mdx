@@ -1,21 +1,31 @@
-import { withRouter } from 'next/router'
-import BlogPost from '../components/layouts/blog-post'
-import Page from '../components/layouts/page'
+import { withRouter } from "next/router"
+import BlogPost from "../components/layouts/blog-post"
+import Page from "../components/layouts/page"
 
 export const meta = {
-  title: 'About',
-  summary:
-    'Hi! This is a placeholder page. I thought that the header was too empty so I wanted to add an element to show how to add additional pages and put a small navigation here.',
+    title: "About",
+    summary: "Hi! This is my about page, where I talk about myself."
 }
 
 export default withRouter(({ children, router }) => (
-  <Page path={router.pathname} meta={meta}>
-    {children}
-  </Page>
+    <Page path={router.pathname} meta={meta}>
+        {children}
+    </Page>
 ))
 
-Hi! This is a placeholder page.
+### Hi! I'm Cody Swift.
 
-I thought that the header was too empty, so I added an element to show how to add additional pages and put a small navigation there.
+##### Who Are you?
 
-You can create pages using React components or MDX files. [Read more about MDX](https://mdxjs.com/).
+I'm a 28 year old Software Engineer, working primarily in legacy Java and React. It's a weird combination, I know.
+I have been working as a 'professional' engineer for 2 years now, after completing my Associate's Degree in 2017.
+Before engineering, I worked a couple manual labor jobs... Let's just say I really appreciate being indoors now!
+
+##### Why would you do this?
+
+Good question! My goal with this blog is to share my progress as an Engineer. This will cover a broad range of topics, not always engineering related.  
+Topics may include:
+
+-   Programming
+-   Philosophy
+-   Dogs

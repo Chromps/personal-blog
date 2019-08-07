@@ -27,7 +27,7 @@ const Blog = ({ router, page = 1 }) => {
     return (
         <Layout pageTitle="Blog" path={router.pathname}>
             <header>
-                <h1>Blog</h1>
+                <h3>{siteMeta.blogHeader}</h3>
             </header>
 
             {blogposts
@@ -75,6 +75,11 @@ const Blog = ({ router, page = 1 }) => {
             <style jsx>{`
                 header {
                     margin-bottom: 3em;
+                }
+            `}</style>
+            <style jsx global>{`
+                body {
+                    background: #fcfcfc;
                 }
             `}</style>
         </Layout>

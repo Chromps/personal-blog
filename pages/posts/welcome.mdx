@@ -1,28 +1,35 @@
-import { withRouter } from 'next/router'
-import BlogPost from '../../components/layouts/blog-post'
+import { withRouter } from "next/router"
+import BlogPost from "../../components/layouts/blog-post"
 
 export const meta = {
-  published: true,
-  publishedAt: '2018-05-20',
-  title: 'Welcome',
-  summary: 'Welcome to your new blog built with Next.js',
-  image: '/static/site-feature.png',
+    published: true,
+    publishedAt: "2019-08-06",
+    title: "Welcome",
+    summary: "Saying hello, discussing my plans for the blog.",
+    image: "/static/site-feature.png"
 }
 
 export default withRouter(({ children, router }) => (
-  <BlogPost path={router.pathname} meta={meta}>
-    {children}
-  </BlogPost>
+    <BlogPost path={router.pathname} meta={meta}>
+        {children}
+    </BlogPost>
 ))
 
-Welcome to your new blog built with Next.js.
+### Hello!
 
-You&rsquo;ll find this post in your `page/posts` directory. To add new posts, add a MDX file in the `page/posts` directory, press `ctrl + c` to stop the development server and run `now dev` again.
+Welcome to my blog!
 
-After you personalize your blog you can deploy it to Now.
+---
 
-```bash
-$ now
-```
+I've tried blogging before, but it has never stuck. To be completely honest, this project has started with the intnet of getting
+more familiar with Next.js, so I'm not off to the best start :). My goal, however, will be to write one blog post a week. I have
+recently learned of the 'Digital Minimalist' philosophy, and plan to blog about my experience in attempting to adopt it.
 
-Then, you will see your blog online in a URL like https://nextjs-blog-starter.now.sh
+##### I'm also a software engineer and will complain about software regularly
+
+You'll have to bear with me on this. I like to talk about problems in software and how they can be overcome in the 'real world'.
+I'll talk through examples at my job that have lead to some interesting solutions.
+
+Thanks for joining me!
+
+Until next time.
