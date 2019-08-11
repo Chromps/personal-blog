@@ -1,0 +1,40 @@
+import { withRouter } from "next/router"
+import BlogPost from "../../components/layouts/blog-post"
+
+export const meta = {
+    published: true,
+    publishedAt: "2019-08-10",
+    title: "Dev Culture",
+    summary: "Why it's the more than bagel fridays",
+    image: "/static/culture.jpg"
+}
+
+export default withRouter(({ children, router }) => (
+    <BlogPost path={router.pathname} meta={meta}>
+        {children}
+    </BlogPost>
+))
+
+<img src="/static/culture.jpg" />
+
+### So what is dev culture anyways?
+
+This is the question in HR minds around the world as company culture is spun into Taco Tuesday, Ping Pong Tables, and Free Beer.
+Although these are awesome perks (current job has a few, and seriously HR I appreciate you), they aren't going to make or break a
+job for me. No, to me Dev culture is something more fundamental. For me, it breaks down as:
+
+-   Are my dev skills valued, or am I a coding monkey?
+-   Am I making the product better?
+-   Am I learning new skills?
+
+### Let me explain
+
+The above may sound oversimplified, that's intentional. My point with this post is no matter how many 'perks' you have, Devs generally want to leave the software
+they are working on better than when they started. This means you occasionally have to let a Dev run with something. So, maybe you loose a couple days to an idea
+that did not work out. Is that worth having a happy developer, who has learned a new skill that can be applied in the future? I think so, and most of the Devs
+I know would agree. Sometimes, you might even get a tool or enhancement that saves 100s of hours of developer work per year.
+
+### It's not always roses
+
+Obviously, I'm not advocating that we do not have to do actual work that, you know, keeps the business running and profiting. I'm just suggesting a different
+approach to dev culture that focuesses on their core values, not their stomach.
