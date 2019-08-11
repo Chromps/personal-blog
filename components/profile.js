@@ -11,7 +11,10 @@ const Profile = () => (
 
         <div>
             <p>
-                Hi, I'm <Link href="/about">{siteMeta.author}</Link>
+                Hi, I'm{" "}
+                <Link href="/about" as="/about">
+                    <a>{siteMeta.author}</a>
+                </Link>
             </p>
             <p className="p-note">
                 I'm a fullstack engineer and an aspiring digital minimalist.
