@@ -1,0 +1,43 @@
+import { withRouter } from "next/router"
+import BlogPost from "../../components/layouts/blog-post"
+
+export const meta = {
+    published: true,
+    publishedAt: "2019-09-02",
+    title: "Minimalism",
+    summary: "Doing more with less",
+    image: "/static/minimalism.jpg"
+}
+
+export default withRouter(({ children, router }) => (
+    <BlogPost path={router.pathname} meta={meta}>
+        {children}
+    </BlogPost>
+))
+
+<img src="/static/minimalism.jpg" />
+
+### Why I Am Choosing Less
+
+Over the past month I have drastically reduced my technology usage outside of work, and have slowly been working to streamline my life as well.
+I've noticed a huge difference in my attention span and my ability to think about problems for a long period of time. I have also been
+able to accomplish things that I have been putting off for months, such as selling unused audio equipment (I'm a recovering audiophile).
+
+### Simplifying My Life
+
+This may sound cliche, but it's a huge benefit for me. I love reading, but found myself only reading a few books a year. Since adopting
+the 'digital minimalism' philosophy in my life, I've managed to read almost 3 books in a month. I also have much more time to play with
+my awesome doggo, and she's super happy about it.
+
+Reducing the amount of tech I use means I occasionally miss out on Instagram posts and Facebook status updates, but what I am realizing is these things
+do not need to be consumed in real time. After initially cutting off Instagram completely, I've now alotted myself 1 check of my feed every other day.
+Rules are: No stories, scroll only until I reach a post I recognize, and no explore page. I've found this approach allows me to still keep tabs
+on what my friend are doing, but does not suck me in for hours on end as it used to.
+
+### Simplifying My Code
+
+The minimlaist philosophy has re-affirmed some long-standing ideas I've had about the complexity of the software we write. There are several
+examples of overly complex code at work, all of which was written with nothing but the best intentions. In practice, however, it provides multiple layers
+of difficult to follow logic and often makes things much more difficult to implement. I'm realising sometimes the simplest solution _is_ the best solution,
+assuming it adresses all the clients requirements. In the long run, it will be easier to maintain and reason about, and future enhancements can be
+designed when needed vs when first thought about.
